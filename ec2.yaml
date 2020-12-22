@@ -6,7 +6,7 @@ Parameters:
     Description: An environment name that will be prefixed to resource names
     Type: String
     Default: PROD
-  VpcId:
+  VpcID:
     Description: VPC ID for resources
     Type: AWS::SSM::Parameter::Value<AWS::EC2::VPC>
     Default: VpcID
@@ -39,7 +39,7 @@ Resources:
       ImageId: !Ref ImageID
       SubnetId: !Ref SubnetID
       SecurityGroupIds:
-        - sg-0d86e1f034bca868c
+        - sg-0455913ad8533e259
       BlockDeviceMappings:
         -
           DeviceName: /dev/sda1
